@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: hsl(30, 54%, 90%);
+}
+section{
+    overflow-y: scroll;
+    width: 40%;
+    height: 100%;
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: .6em;
+    padding: 20px 20px;
+}
+section #img-box{
+    width: 100%;
+    height: 10em;
+    background-image: url(image-omelette.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: .3em;
+    margin-bottom: 10px;
+}
+h1{
+    font-size: 1.6em;
+    font-family: Young Serif;
+    font-weight: 500;
+}
+section p{
+    font-size: .5em;
+    opacity: .7;
+    font-family: Outfit;
+    margin-top: 5px;
+}
+section #item-box{
+    width: 100%;
+    height: 80px;
+    background-color: hsl(330, 100%, 98%);
+    margin-top: 10px;
+    border-radius: .3em;
+    padding: 10px 15px;
+    font-family: Outfit;
+    margin-bottom: .4em;
+}
+#item-box #text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+#text>h2{
+    font-size: .8em;
+    font-weight: 600;
+    color: hsl(332, 51%, 32%);
+}
+#text li{
+    font-size: .6em;
+    font-weight: 400;
+    margin-left: 15px;
+    margin-bottom: .3em;
+    opacity: .7;
+}
+section h3{
+    font-family: Young Serif;
+    font-weight: 500;
+    font-size: .8em;
+    color: hsl(332, 51%, 32%);
+    margin-top: 5px;
+}
+section #center-list{
+    font-size: .6em;
+    opacity: .8;
+    font-family: Outfit;
+    margin: 5px 15px;
+    line-height: 1.5;
+}
+section ol{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: .5em;
+    line-height: 1.5em;
+    font-family: Outfit;
+    margin: 10px 15px;
+}
+li::marker {
+    color: hsl(332, 51%, 32%); 
+    font-weight: 600;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0 10px;
+    margin-top: 10px;
+    font-size: .5em;
+    line-height: 2;
+  }
+  tr {
+    border-bottom: 1px solid #ccc; 
+  }
+  td{
+    padding-left: 15px;
+    font-family: Outfit;
+  }
+#bold{
+    font-weight: 700;
+    color: hsl(332, 51%, 32%); 
+}
+
+.attribution { 
+    margin-top: 10px;
+    font-size: 11px; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+
+ @media(max-width:375px){
+    section{
+        width: 100%;
+    }
+ }
